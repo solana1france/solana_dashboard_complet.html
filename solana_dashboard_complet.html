@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solana France – Contacts & Dashboard Transport</title>
+  <style>
+    /* [INCLURE TOUS TES STYLES CSS existants ici - raccourci] */
+    body{font-family:'Segoe UI',sans-serif;background:#f5f7fa;}
+    .dashboard-login{display:flex;align-items:center;justify-content:center;min-height:70vh;background:linear-gradient(135deg,#00b4d8,#0077b6);}
+    .login-card{background:#fff;border-radius:16px;padding:32px 40px;box-shadow:0 20px 40px rgba(0,0,0,.2);max-width:380px;width:100%;text-align:center;}
+    .dashboard-section{display:none;}
+    .dashboard-visible{display:block;}
+    .kpi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin:20px 0;}
+    .kpi-card{background:#fff;border-radius:12px;padding:20px;box-shadow:0 8px 24px rgba(0,0,0,.1);text-align:center;border-top:4px solid #00b4d8;}
+    .kpi-number{font-size:2rem;font-weight:700;color:#0077b6;}
+    table{width:100%;border-collapse:collapse;margin:20px 0;}
+    th,td{padding:12px;text-align:left;border-bottom:1px solid #e2e8f0;}
+    th{background:#f8fafc;color:#374151;font-weight:600;}
+    .status-en-attente{background:#fef3c7;color:#92400e;padding:4px 8px;border-radius:4px;}
+  </style>
+</head>
+<body>
+
+<!-- LOGIN SÉCURISÉ -->
+<div class="dashboard-login" id="loginScreen">
+  <div class="login-card">
+    <h2>🔐 Solana France Dashboard</h2>
+    <p>Accès transporteurs & clients</p>
+    <input type="password" id="loginPass" placeholder="Mot de passe" style="width:100%;padding:12px;border:1px solid #d1d5db;border-radius:8px;margin:16px 0;font-size:16px;">
+    <button onclick="login()" style="width:100%;padding:12px 24px;background:#00b4d8;color:white;border:none;border-radius:8px;font-weight:600;cursor:pointer;">Accéder au dashboard</button>
+    <p style="font-size:14px;color:#6b7280;margin-top:12px;">Contactez logistique@solana.de pour accès</p>
